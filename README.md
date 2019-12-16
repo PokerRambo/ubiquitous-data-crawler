@@ -15,6 +15,8 @@ After all these, we should start the JS rendering service:
 
 ```shell
 docker run -p 8050:8050 scrapinghub/splash
+# if you want to designate the dns, type as follows:
+docker run --dns 10.10.0.21 -p 8050:8050 scrapinghub/splash
 ```
 
 Then we need to add some configurations to `settings.py` of our weatherinfo project.
